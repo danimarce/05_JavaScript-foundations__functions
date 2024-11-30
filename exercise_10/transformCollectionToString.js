@@ -17,3 +17,25 @@
  * input: []
  * output: ""
  */
+
+/**
+ * transforms collection into string, if array has elements, then return array as string, joined by '|', otherwise, return an empty string
+ * @param {Array} collection 
+ * @returns {string}
+ */
+const transformCollectionToString = function (collection) {
+    let finalString = '';
+    const collectionLength = collection.length;
+
+    for (let indexCollection = 0; indexCollection < collectionLength; indexCollection++) {
+        finalString += collection[indexCollection];
+
+        if (indexCollection < collectionLength - 1) {
+            finalString += ' | ';
+        }
+    }
+
+    return finalString;
+}
+
+export default transformCollectionToString;

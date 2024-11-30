@@ -16,3 +16,20 @@
  * CASE #2 * input: "This is short one."
  * output: "this is short one."
  */
+
+/**
+ * returns the parameter sentence in upper case if the number of sentence words if greater then 5, otherwise return lower case string 
+ * @param {string} sentence 
+ * @returns {string}
+ */
+const formatStringByWordsLength = function (sentence) {
+    const totalWords = sentence.split(' ');
+
+    if (totalWords.length > 5) {
+        return sentence.toUpperCase();
+    }
+
+    return sentence.toLowerCase();
+} 
+
+export default formatStringByWordsLength;
