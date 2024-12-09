@@ -24,8 +24,9 @@
  */
 const formatStringByWordsLength = function (sentence) {
     const totalWords = sentence.split(' ');
+    const threshold = 5;
 
-    if (totalWords.length > 5) {
+    if (totalWords.length > threshold) {
         return sentence.toUpperCase();
     }
 

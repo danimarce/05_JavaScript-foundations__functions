@@ -12,7 +12,8 @@
  * @returns 
  */
 const isAdditionGreaterThanFifty = function (summand1, summand2) {
-    return summand1 + summand2 >= 50;
+    const threshold = 50;
+    return summand1 + summand2 >= threshold;
 }
 
 export default isAdditionGreaterThanFifty;
